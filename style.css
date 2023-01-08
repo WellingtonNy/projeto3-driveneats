@@ -13,7 +13,6 @@ html {
 .container {
     width: 100%;
     max-width: 414px;
-    background-color: red;
     margin: 0 auto;
     position: relative;
 }
@@ -34,6 +33,7 @@ html {
 .top {
     background-color: #CF2B2B;
     top: 0;
+    z-index: 1;
     padding-left: 21px;
     padding-top: 5px;
     font-family: 'Righteous', cursive;
@@ -78,18 +78,19 @@ html {
     display: flex;
     width: 100%;
     height: 216px;
-    background-color: bisque;
+    background-color: #EEEEEE;
     overflow-x: scroll
 }
 
 .card {
-    background-color: chartreuse;
+    background-color:#FFFFFF;
     width: 172px;
     height: 216px;
     margin-left: 19px;
     border-radius: 9px;
     padding: 13px;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -117,7 +118,7 @@ html {
 .card span {
     color: #000000;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 18.75px;
 }
 
@@ -142,4 +143,20 @@ html {
     letter-spacing: 1.8%;
     border: none;
     text-align: center;
+}
+
+.selecionado{
+    box-shadow: inset 0 0 0 5px #32B72F;
+}
+
+.card .check{
+    width: 17.44px;
+    height: 17.44px;
+    position: absolute;
+    right: 12px;
+    bottom: 15px;
+    display: none;
+}
+.card .mostrar{
+    display: inherit;
 }
