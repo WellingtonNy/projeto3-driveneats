@@ -63,14 +63,14 @@ function habilitarPedir() {
 
 function conferir() {
     document.querySelector('.modal').classList.remove('escondido')
-    document.querySelector('.modal .info .infoPrato p').innerText =`${prato}`
-    document.querySelector('.modal .info .infoPrato span').innerText =`${precoPrato}`
-    document.querySelector('.modal .info .infoBebida p').innerText =`${bebida}`
-    document.querySelector('.modal .info .infoBebida span').innerText =`${precoBebida}`
-    document.querySelector('.modal .info .infoSobremesa p').innerText =`${sobremesa}`
-    document.querySelector('.modal .info .infoSobremesa span').innerText =`${precoSobremesa}`
+    document.querySelector('.modal .info .infoPrato p').innerText = `${prato}`
+    document.querySelector('.modal .info .infoPrato span').innerText = `${precoPrato}`
+    document.querySelector('.modal .info .infoBebida p').innerText = `${bebida}`
+    document.querySelector('.modal .info .infoBebida span').innerText = `${precoBebida}`
+    document.querySelector('.modal .info .infoSobremesa p').innerText = `${sobremesa}`
+    document.querySelector('.modal .info .infoSobremesa span').innerText = `${precoSobremesa}`
     total()
-    document.querySelector('.modal .info .total span').innerText =`${precoTotal}`
+    document.querySelector('.modal .info .total span').innerText = `${precoTotal}`
     nome = prompt('Digite seu Nome')
     endereco = prompt('Digite seu Endereço')
 }
@@ -88,13 +88,9 @@ function cancelarPedido() {
 
 
 function podePedir() {
-    const mensagem = `https://wa.me/5521991750289?text=${encodeURIComponent(whatsApp)}`
-    window.open(mensagem)
-}
 
-
-let whatsApp =
-`Olá, gostaria de fazer o pedido:\n
+    let whatsApp =
+        `Olá, gostaria de fazer o pedido:\n
 - Prato:${prato}\n
 - Bebida:${bebida}\n
 - Sobremesa:${sobremesa}\n
@@ -102,3 +98,8 @@ Total: R$${precoTotal}\n
 \n
 Nome:${nome}\n
 Endereço:${endereco}`
+
+
+    const mensagem = `https://wa.me/5521991750289?text=${encodeURIComponent(whatsApp)}`
+    window.open(mensagem)
+}
