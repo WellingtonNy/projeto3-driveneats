@@ -88,7 +88,7 @@ function cancelarPedido() {
 
 
 function podePedir() {
-    const mensagem = 'https://wa.me/5521991750289?text=' + encodeURIComponent(whatsApp)
+    const mensagem = `https://wa.me/5521991750289?text=${encodeURIComponent(whatsApp)}`
     window.open(mensagem)
 }
 
