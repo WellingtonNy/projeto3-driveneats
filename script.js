@@ -94,7 +94,7 @@ let precoTotalWpp=precoTotal.replace(',','.')
 - Prato:${prato}\n
 - Bebida:${bebida}\n
 - Sobremesa:${sobremesa}\n
-Total: R$${precoTotalWpp}\n
+Total: R$ ${precoTotalWpp}\n
 \n
 Nome:${nome}\n
 Endereço:${endereco}`
