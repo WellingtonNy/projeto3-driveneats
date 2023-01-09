@@ -88,13 +88,13 @@ function cancelarPedido() {
 
 
 function podePedir() {
-
+let precoTotalWpp=precoTotal.replace(',','.')
     let whatsApp =
         `Olá, gostaria de fazer o pedido:\n
 - Prato:${prato}\n
 - Bebida:${bebida}\n
 - Sobremesa:${sobremesa}\n
-Total: R$${precoTotal}\n
+Total: R$${precoTotalWpp}\n
 \n
 Nome:${nome}\n
 Endereço:${endereco}`
