@@ -4,6 +4,9 @@ let sobremesa;
 let precoPrato;
 let precoBebida;
 let precoSobremesa;
+let precoTotal;
+let nome;
+let endereco;
 
 
 function selecionarPrato(thisPrato) {
@@ -59,10 +62,21 @@ if(prato !== undefined && bebida !== undefined && sobremesa !== undefined){
 
 
 function conferir(){
-    
+    document.querySelector('.modal').classList.remove('escondido')
+    document.querySelector('.modal .info .infoPrato p').innerText=`${prato}`
+    document.querySelector('.modal .info .infoPrato span').innerText=`${precoPrato}`
+    document.querySelector('.modal .info .infoBebida p').innerText=`${bebida}`
+    document.querySelector('.modal .info .infoBebida span').innerText=`${precoBebida}`
+    document.querySelector('.modal .info .infoSobremesa p').innerText=`${sobremesa}`
+    document.querySelector('.modal .info .infoSobremesa span').innerText=`${precoSobremesa}`
+    total()
+    document.querySelector('.modal .info .total span').innerText=`${precoTotal}`
+    nome=prompt('Digite seu Nome')
+    endereco=prompt('Digite seu Endereço')
+    }
+
+
+function total(){
+    precoTotal=(Number(precoPrato.replace(',', '.')) +Number(precoBebida.replace(',', '.'))+ Number(precoSobremesa.replace(',', '.'))).toFixed(2).replace('.',',')
+    console.log(precoTotal)
 }
-
-
-
-
-let total = '26,54'.replace(',', '.')
