@@ -55,10 +55,8 @@ html {
 
 .mid {
     height: 100%;
-    margin-bottom: 92px;
-    margin-top: 92px;
-    padding-top: 5px;
-    padding-bottom: 16px;
+    padding-top: 97px;
+    padding-bottom: 108px;
     background-color: #EEEEEE;
 }
 
@@ -83,7 +81,7 @@ html {
 }
 
 .card {
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     width: 172px;
     height: 216px;
     margin-left: 19px;
@@ -144,11 +142,11 @@ html {
     text-align: center;
 }
 
-.selecionado{
+.selecionado {
     box-shadow: inset 0 0 0 5px #32B72F;
 }
 
-.card .check{
+.card .check {
     width: 17.44px;
     height: 17.44px;
     position: absolute;
@@ -157,18 +155,111 @@ html {
     display: none;
 }
 
-.card .mostrar{
+.card .mostrar {
     display: inherit;
 }
 
-.bot .habilitado{
+.bot .habilitado {
     background-color: #32B72F;
     font-weight: 700;
 }
 
-.modal{
-   max-width: 144px;
-   width: 100%;
-   height: 100%;
-   background-color: #333333;
+.modal {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    max-width: 414px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .info {
+    width: 377px;
+    Height: 353px;
+    background-color: #50D074;
+    padding-top: 26px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+
+.info .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoPrato,
+.infoBebida,
+.infoSobremesa,
+.infoPrato span,
+.infoBebida span,
+.infoSobremesa span {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
+
+.total {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    padding-top: 25px;
+}
+
+.podePedir {
+    width: 333px;
+    height: 52px;
+    background-color: #FFFFFF;
+    color: #50D074;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    border-radius: 100px;
+    border: none;
+}
+
+.cancelar {
+    width: 153px;
+    height: 52px;
+    color: #FFFFFF;
+    background-color: #50D074;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    border-radius: 100px;
+    border: none;
+}
+
+.escondido{
+    display: none;
 }
