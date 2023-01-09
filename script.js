@@ -91,7 +91,7 @@ function podePedir() {
 
     let whatsApp =
         `Olá, gostaria de fazer o pedido:\n
-- Prato:${document.querySelector('.prato .selecionado h3').innerText}\n
+- Prato:${prato}\n
 - Bebida:${bebida}\n
 - Sobremesa:${sobremesa}\n
 Total: R$${precoTotal}\n
