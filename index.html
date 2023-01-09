@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -151,15 +152,23 @@
         </div>
         <div class="modal escondido">
             <div class="info">
-            <h4>Confirme seu pedido</h4>
-            <div class="infoPrato flex"><p></p><span></span></div>
-            <div class="flex infoBebida"><p></p><span></span></div>
-            <div class="flex infoSobremesa"><p></p><span></span></div>
-            <div class="flex total"><p>TOTAL</p><span></span></div>
-            <div class="botoes">
-            <button class="podePedir">Tudo certo, pode pedir!</button>
-            <button class="cancelar">Cancelar</button>
-            </div>
+                <h4>Confirme seu pedido</h4>
+                <div class="infoPrato flex">
+                    <p></p><span></span>
+                </div>
+                <div class="flex infoBebida">
+                    <p></p><span></span>
+                </div>
+                <div class="flex infoSobremesa">
+                    <p></p><span></span>
+                </div>
+                <div class="flex total">
+                    <p>TOTAL</p><span></span>
+                </div>
+                <div class="botoes">
+                    <button class="podePedir" onclick="podePedir()">Tudo certo, pode pedir!</button>
+                    <button class="cancelar" onclick="cancelarPedido()">Cancelar</button>
+                </div>
             </div>
         </div>
     </div>
