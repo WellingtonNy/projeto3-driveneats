@@ -1,4 +1,4 @@
-# driveneats - Sua comida em 6 minutos
+# Driveneats - Sua comida em 6 minutos
 
 <div align="center">
   <img height="400em" src="https://github.com/WellingtonNy/projeto3-driveneats/blob/main/demo-img/demo01.jpg">
