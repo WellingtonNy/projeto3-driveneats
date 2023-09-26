@@ -49,5 +49,6 @@ Os Conteudos Praticados e Revisados incluem:
 Abra o terminal é use:
 
 ```sh
-git clone 
+git clone https://github.com/WellingtonNy/projeto3-driveneats.git
 ```
+Apos ter o projeto na maquina basta clicar em index.html para o projeto rodar no navegador
