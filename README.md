@@ -43,3 +43,11 @@ Os Conteudos Praticados e Revisados incluem:
 - CSS3
 
 - JavaScript
+
+## Como Rodar
+
+Abra o terminal é use:
+
+```sh
+git clone 
+```
